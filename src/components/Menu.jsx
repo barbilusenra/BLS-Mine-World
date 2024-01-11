@@ -23,7 +23,7 @@ const Menu = () => {
     Swal.fire({
       icon: "warning",
       iconColor:"#c54e17",
-      background:"#eca88d",
+      background:"#daa96a",
       buttonsStyling:false,
       customClass: {
         confirmButton: "confirmSwalCheckout",

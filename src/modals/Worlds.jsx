@@ -45,8 +45,8 @@ const ShowWorlds = ({setOpenWorlds, userUid}) => {
   const handleDeleteWorld = async(worldId) =>{
     Swal.fire({
       icon: "warning",
-      iconColor:"#D2D2BC",
-      background:"#F8F5F1",
+      iconColor:"#c54e17",
+      background:"#daa96a",     
       buttonsStyling:false,
       customClass: {
         confirmButton: "confirmSwalCheckout",

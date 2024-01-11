@@ -6,22 +6,26 @@
 
 @layer components{
   .swalTitle{
-    @apply font-bold tracking-wide text-white
+    @apply font-bold tracking-wider text-white
   }
   .htmlContainer{
-    @apply fonty tracking-wide text-xs
+    @apply fonty tracking-wide text-xs 
+  }
+  .htmlContainer p {
+    @apply text-[#c54e17] font-medium tracking-wide 
   }
   .confirmSwalCheckout{
-    @apply bg-[#c54e17] text-white tracking-wide fonty px-3 py-1 ms-2 m-4 text-sm
+    @apply bg-[#38860a] text-white tracking-wide rounded-sm hover:scale-110 transition-all duration-300 fonty px-3 py-1 ms-2 m-4 text-sm
   }
   .denySwalCheckout{
-    @apply bg-[#c54e17]/50 text-white tracking-wide fonty px-3 py-1 ms-2 m-4 text-sm
+    @apply bg-[#c54e17]/50 text-white rounded-sm hover:scale-110 transition-all duration-300 tracking-wide fonty px-3 py-1 ms-2 m-4 text-sm
   }
+  
 }
 
 *{
-  box-sizing: border-box;
-}
+  box-sizing: border-box; 
+ }
 
 
 html,
