@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .swalTitle{
+    @apply font-bold tracking-wide text-white
+  }
+  .htmlContainer{
+    @apply fonty tracking-wide text-xs
+  }
+  .confirmSwalCheckout{
+    @apply bg-[#c54e17] text-white tracking-wide fonty px-3 py-1 ms-2 m-4 text-sm
+  }
+  .denySwalCheckout{
+    @apply bg-[#c54e17]/50 text-white tracking-wide fonty px-3 py-1 ms-2 m-4 text-sm
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+
+body{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.pointer{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+
+.texture-select{
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.4s ease;
+  transition-timing-function: 0.4s;
+}
+
+
+
+.texture-select img{
+  width: 35px;
+  height: 35px;
+  image-rendering: pixelated;
+}
+
+
+.texture-select img.activeTexture{
+  border: 2px dashed beige;
+}
+
+
+.fonty{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.back-class {
+  transition: all 0.5s ease;
+}
+
+.back-class:hover{
+  scale: 1.05;
+}
